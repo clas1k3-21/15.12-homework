@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Калькулятор суммы");
+            Console.WriteLine("Введите первое число: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите второе число: ");
+            int b = int.Parse(Console.ReadLine());
+            int result = a + b;
+            Console.WriteLine($"Сумма чисел {a} и {b} равна {result}.");
+        }
+    }
+}
