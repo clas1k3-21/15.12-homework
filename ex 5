@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Угадай число");
+            Random rnd = new Random();
+            int a = rnd.Next(1,10);
+            bool b = false;
+            while (b == false)
+            {
+                Console.WriteLine("Введите число: ");
+                int c = int.Parse(Console.ReadLine());
+                if (c < a) 
+                { 
+                    Console.WriteLine("Больше");
+                }
+                if (c > a)
+                {
+                    Console.WriteLine("Меньше");
+                }
+                if (c == a)
+                {
+                    Console.WriteLine("Поздравляю, вы угадали число!");
+                    b = true;
+                }
+            }
+        }
+    }
+}
