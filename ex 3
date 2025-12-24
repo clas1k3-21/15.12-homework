@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Конвертер температуры");
+            Console.WriteLine("Введите температуру в °C");
+            double a = double.Parse(Console.ReadLine());
+            double Far = a * 1.8 + 32;
+            Console.WriteLine($"Температура в °F -> {Far}");
+        }
+    }
+}
