@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Сумма и среднее");
+            double[] mas = {1,15,20,25,30 };
+            double sum = mas[0] + mas[1] + mas[2] + mas[3] + mas[4];
+            double sr = (mas[0] + mas[1] + mas[2] + mas[3] + mas[4])/5;
+            Console.WriteLine($"Сумма - {sum}\nср. знач. - {sr}");
+        }
+    }
+}
