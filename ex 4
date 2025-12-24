@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Поиск максимума");
+            Console.WriteLine("Введите первое число: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите второе число: ");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите третье число: ");
+            int c = int.Parse(Console.ReadLine());
+            if (a > b & a > c) 
+            {
+                Console.WriteLine($"Большее число - {a}");
+            }
+
+            if (b > a & b > c)
+            {
+                Console.WriteLine($"Большее число - {b}");
+            }
+            if(c > a & c > b)  
+            {
+                Console.WriteLine($"Большее число - {c}");
+            }
+        }
+    }
+}
