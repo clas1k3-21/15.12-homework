@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Schema;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите строку: ");
+            string str = Console.ReadLine();
+            int len = str.Length;
+            string strUP = str.ToUpper();
+            if (str.ToLower().Contains("привет"))
+            {
+                Console.WriteLine($"Длина строки - {len}\n{strUP}\nСтрока содержит слово привет в любом регистре ");
+            }
+            else 
+            {
+                Console.WriteLine($"Длина строки - {len}\n{strUP}\nСтрока НЕ содержит слово привет в любом регистре ");
+            }
+
+        }
+    }
+}
